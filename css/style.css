@@ -248,8 +248,22 @@ header h1{
 
 nav{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
+    overflow-x:auto;
+    white-space:nowrap;
+    gap:15px;
+    padding:10px;
+    justify-content:flex-start;
+    scrollbar-width:none; /* Firefox */
+}
+
+nav::-webkit-scrollbar{
+    display:none; /* Chrome */
+}
+
+nav a{
+    flex:0 0 auto;
+    font-size:14px;
+    padding:8px 12px;
 }
 
 nav a{
