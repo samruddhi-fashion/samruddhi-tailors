@@ -111,10 +111,13 @@ margin-top:40px;
     text-align:center;
     color:white;
     padding:40px;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-               url("../images/hero/hero.jpg");
+
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/hero/hero.jpg");
+
     background-size:cover;
-    background-position:center;
+    background-position:center center;
 }
 .hero h2{
 font-size:42px;
@@ -242,10 +245,11 @@ border-radius:10px;
 /* MOBILE RESPONSIVE FIX */
 @media (max-width: 768px){
 .hero{
-    min-height:350px;
+    min-height:320px;
+    padding:20px;
+
     background-size:cover;
     background-position:top center;
-    padding:20px;
 }
 header h1{
     font-size:22px;
@@ -272,11 +276,13 @@ nav a{
     padding:8px 12px;
     margin:0;
 }
-
 .hero{
+    min-height:320px;
     padding:20px;
-}
 
+    background-size:cover;
+    background-position:top center;
+}
 .hero h2{
     font-size:24px;
 }
